@@ -11,7 +11,7 @@ class Mail
     ) {
         // TODO: SwiftMailer使うように書き直す
         $cmd = sprintf(
-            "echo '%s | mail -s '%s' %s",
+            "echo %s | mail -s %s %s",
             escapeshellarg($body),
             escapeshellarg($title),
             escapeshellarg($mailTo)
