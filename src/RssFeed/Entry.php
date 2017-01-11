@@ -28,11 +28,11 @@ class Entry
 
     public function __get($key)
     {
-        if (!property_exists($this, $k)) {
-            throw new \InvalidArgumentException("Unexpected property. [Property] {$k}");
+        if (!property_exists($this, $key)) {
+            throw new \InvalidArgumentException("Unexpected property. [Property] {$key}");
         }
 
-        return $this->k;
+        return $this->$key;
     }
 
     public function isNotified()
