@@ -1,0 +1,10 @@
+# Dir
+vendor/
+
+# Extension
+*.swp
+
+# File
+.DS_Store
+composer.lock
+composer.phar
