@@ -11,6 +11,9 @@ use App\RssFeed\ParseFailureException;
  */
 class Rss2 implements ParserInterface
 {
+    /**
+     * {@inheritdoc}
+     */
     public function parse(string $xml)
     {
         $dom = new \SimpleXMLElement($xml);
