@@ -1,9 +1,16 @@
-- title: それマジですごいヤバイ
+# サイト名 (e.g. "それマジですごいヤバイ")
+- title: "それマジですごいヤバイ"
   feed:
-    url: https://pinkumohikan.com/feed/
-    type: rss2
+    # RSSフィードのURL (e.g. "https://pinkumohikan.com/feed/")
+    url: "https://pinkumohikan.com/feed/"
+    # RSSフィードの種類 (e.g. "rss2")
+    type: "rss2"
   notify:
-    method: mail
-    destination: in_code@pinkumohikan.com
+    # 通知方法 (e.g. "mail")
+    method: "mail"
+    # 通知先 (e.g. "in_code@pinkumohikan.com")
+    destination: "in_code@pinkumohikan.com"
+    # 通知時のタイトル (e.g. "")
     title: ""
+    # 通知時のメッセージ本文 (e.g. "ブログを書きました。")
     body: "ブログを書きました。"
