@@ -51,7 +51,7 @@ class Log
     {
         // file open modeが `a+` なら、書き込み時は常に追記になる
         // see: http://php.net/manual/ja/function.fopen.php
-        $result = $this->file->fwrite($link);
+        $result = $this->file->fwrite($link.PHP_EOL);
         if (!$result) {
             throw new \RuntimeException(
                 'File write failure. [Path] '.$this->file->getRealPath()
