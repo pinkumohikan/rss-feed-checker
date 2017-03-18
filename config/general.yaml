@@ -1,0 +1,9 @@
+- title: それマジですごいヤバイ
+  feed:
+    url: https://pinkumohikan.com/feed/
+    type: rss2
+  notify:
+    method: mail
+    destination: pinkumohikan@gmail.com
+    title: ""
+    body: "ブログを書きました。"
