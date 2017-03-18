@@ -7,7 +7,7 @@ RSSの更新をチェックして、メール送ったりする君です
 
 
 ## 対応しているRSSフォーマット
-* [RSS2.0](src/RssFeed/Parser/Rss2.php)
+* [RSS2.0](src/RssFeed/Parser/Rss20.php)
 
 チェックしたいRSSフォーマットが上記にないなら [ParserInterface](src/RssFeed/ParserInterface.php) を実装するParserを書いてPRをお送り下さい
 
@@ -32,7 +32,6 @@ RSSの更新をチェックして、メール送ったりする君です
 動作環境
 ----
 * php 7.0以上
-* automake
 
 
 セットアップ

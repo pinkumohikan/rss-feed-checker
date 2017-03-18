@@ -7,9 +7,9 @@ use App\RssFeed\ParserInterface;
 use App\RssFeed\ParseFailureException;
 
 /**
- * RSS2フォーマットのRSSフィードをパースする
+ * RSS2.0フォーマットのRSSフィードをパースする
  */
-class Rss2 implements ParserInterface
+class Rss20 implements ParserInterface
 {
     /**
      * {@inheritdoc}

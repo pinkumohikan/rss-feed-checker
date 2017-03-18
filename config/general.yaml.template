@@ -3,8 +3,8 @@
   feed:
     # RSSフィードのURL (e.g. "https://pinkumohikan.com/feed/")
     url: "https://pinkumohikan.com/feed/"
-    # RSSフィードの種類 (e.g. "rss2")
-    type: "rss2"
+    # RSSフィードの種類 (e.g. "rss20")
+    type: "rss20"
   notify:
     # 通知方法 (e.g. "mail")
     method: "mail"
