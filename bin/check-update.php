@@ -23,6 +23,9 @@ foreach ($configs as $c) {
  */
 function checkUpdate(array $config)
 {
+    print '---'.PHP_EOL;
+    print "チェック対象:".$config['title'].PHP_EOL;
+
     $feedUrl = $config['feed']['url'];
     $xml = file_get_contents($feedUrl);
     if ($xml === false) {
@@ -34,7 +37,7 @@ function checkUpdate(array $config)
         ->parse($xml);
     $latestEntry = array_shift($entries);
     if ($latestEntry->isNotified()) {
-        print '最新のエントリーは通知済みでした';
+        print '最新のエントリーは通知済みでした'.PHP_EOL;
         return true;
     }
 
