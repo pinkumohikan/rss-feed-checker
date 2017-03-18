@@ -7,14 +7,14 @@ RSSの更新をチェックして、メール送ったりする君です
 
 
 ## 対応しているRSSフォーマット
-* [RSS2.0](tree/master/src/RssFeed/Parser/Rss2.php)
+* [RSS2.0](src/RssFeed/Parser/Rss2.php)
 
-チェックしたいRSSフォーマットが上記にないなら [ParserInterface](tree/master/src/RssFeed/ParserInterface.php) を実装するParserを書いてPRをお送り下さい
+チェックしたいRSSフォーマットが上記にないなら [ParserInterface](src/RssFeed/ParserInterface.php) を実装するParserを書いてPRをお送り下さい
 
 ## 対応している更新通知先
-* [メール](tree/master/src/UpdateNotify/Notifier/Mail.php)
+* [メール](src/UpdateNotify/Notifier/Mail.php)
 
-通知したい方法が上記にないなら [NotifierInterface](tree/master/src/UpdateNotify/NotifierInterface.php) を実装するNotifierを書いてPRをお送り下さい
+通知したい方法が上記にないなら [NotifierInterface](src/UpdateNotify/NotifierInterface.php) を実装するNotifierを書いてPRをお送り下さい
 
 ## 想定している使い方
 * ブログに更新があれば #あとで読む タグを付けてはてなブックマークする
