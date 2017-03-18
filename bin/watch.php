@@ -7,7 +7,7 @@ use App\UpdateNotify\Notifier\Mail;
 
 $xml = file_get_contents(getenv('ATOM_URL'));
 
-$parser = (new ParserFactory())->create('atom');
+$parser = (new ParserFactory())->create('rss2');
 $entries = $parser->parse($xml);
 $latestEntry = array_shift($entries);
 

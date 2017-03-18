@@ -6,17 +6,20 @@ use App\RssFeed\Entry;
 use App\RssFeed\ParserInterface;
 use App\RssFeed\ParseFailureException;
 
-class Atom implements ParserInterface
+/**
+ * RSS2フォーマットのRSSフィードをパースする
+ */
+class Rss2 implements ParserInterface
 {
     public function parse(string $xml)
     {
         $dom = new \SimpleXMLElement($xml);
 
-        $entries = [];
-
         if (!isset($dom->channel) || !isset($dom->channel->item)) {
             throw new ParseFailureException("[RawXml] `{$xml}`");
         }
+
+        $entries = [];
 
         foreach ($dom->channel->item as $entry) {
             $entries[] = new Entry([
