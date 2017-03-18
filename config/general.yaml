@@ -4,6 +4,6 @@
     type: rss2
   notify:
     method: mail
-    destination: example@example.com
+    destination: in_code@pinkumohikan.com
     title: ""
     body: "ブログを書きました。"
