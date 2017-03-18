@@ -1,16 +1,27 @@
 <?php
 
+/**
+ * RSSフィードの更新をチェックして、更新があれば所定の方法で更新通知を行う
+ */
+
 require_once dirname(__DIR__).'/bootstrap.php';
 
 $configs = (new App\Yaml\Parser())
     ->parse(APP_ROOT.'/config/general.yaml');
 
 foreach ($configs as $c) {
-    watchUpdate($c);
+    checkUpdate($c);
 }
 
 
-function watchUpdate(array $config)
+/** 
+ * 更新をチェックして、更新があれば更新通知を行う
+ *
+ * @param  array $config 一つのRSSフィードに対する設定
+ *
+ * @return bool  更新に成功すればtrue
+ */
+function checkUpdate(array $config)
 {
     $feedUrl = $config['feed']['url'];
     $xml = file_get_contents($feedUrl);
