@@ -1,0 +1,9 @@
+Mary Smith:
+  age: 27
+  sex: women
+Susan Williams:
+  age: 41
+  sex: men
+  child:
+    - john
+    - same

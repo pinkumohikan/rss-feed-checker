@@ -44,20 +44,19 @@ RSSの更新をチェックして、メール送ったりする君です
 make install
 ```
 
+ライセンス
+----
+MIT
 
 Contribution
 ----
 お気軽にどうぞ！
 IssueからでもPRからでも大歓迎です
 
-
-ライセンス
-----
-MIT
-
-
-作った人
+Contributors
 ----
 * [Hokuto Shinoda](https://github.com/pinkumohikan)
     * Twitter: [@pinkumohikan](https://twitter.com/pinkumohikan)
     * Blog: [https://pinkumohikan.com](https://pinkumohikan.com)
+* [Ikezoe Makoto](https://github.com/IkezoeMakoto)
+    * Twitter: [@for__3](https://twitter.com/for__3)

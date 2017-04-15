@@ -9,3 +9,6 @@ config/general.yaml:
 .PHONY: install
 install: composer.phar config/general.yaml
 	./composer.phar install --no-dev --prefer-dist --optimize-autoloader --no-interaction
+
+test:
+	vendor/bin/phpunit -c tests/phpunit.xml --bootstrap bootstrap.php tests/
