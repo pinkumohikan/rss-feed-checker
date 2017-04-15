@@ -10,3 +10,4 @@ composer.lock
 composer.phar
 .env
 config/general.yaml
+.idea

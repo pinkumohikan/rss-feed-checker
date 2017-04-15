@@ -1,0 +1,14 @@
+<phpunit
+        backupGlobals="false"
+        bootstrap="../bootstrap.php"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        stopOnError="true"
+        stopOnFailure="true"
+        stopOnIncomplete="false"
+        stopOnSkipped="false"
+        stopOnRisky="true"
+>
+</phpunit>
