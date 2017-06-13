@@ -10,7 +10,12 @@ $configs = (new App\Yaml\Parser())
     ->parse(APP_ROOT.'/config/general.yaml');
 
 foreach ($configs as $c) {
-    checkUpdate($c);
+    try {
+        checkUpdate($c);
+    } catch (\RuntimeException $e) {
+        $stderr = fopen('php://stderr', 'w');
+        fwrite($stderr, (string) $e);
+    }
 }
 
 
