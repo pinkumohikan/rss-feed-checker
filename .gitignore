@@ -6,7 +6,6 @@ vendor/
 
 # File
 .DS_Store
-composer.lock
 composer.phar
 .env
 config/general.yaml
