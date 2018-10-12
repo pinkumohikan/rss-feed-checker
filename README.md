@@ -1,6 +1,8 @@
 RSS Feed Checker
 ====
 
+[![CircleCI](https://circleci.com/gh/pinkumohikan/rss-feed-checker/tree/master.svg?style=svg&circle-token=3a23ee8f96d80189d1d68b199a8d0f98d30a7d64)](https://circleci.com/gh/pinkumohikan/rss-feed-checker/tree/master)
+
 RSSの更新をチェックして、更新が有った際に通知を行います
 
 ### 対応しているRSSフォーマット
