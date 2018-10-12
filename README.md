@@ -19,7 +19,7 @@ RSSの更新をチェックして、更新が有った際に通知を行いま�
 1. このリポジトリをclone
     * `git clone --depth 1 https://github.com/pinkumohikan/rss-feed-checker.git`
 1. 依存パッケージをinstall
-    * `make install`
+    * `make setup`
 1. 監視対象を設定
     * `vim config/general.yml`
 1. cronとかで定期実行する
