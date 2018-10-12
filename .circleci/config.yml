@@ -1,0 +1,26 @@
+# PHP CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-php/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/php:7.1-browsers
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+          - vendor-{{ checksum "composer.json" }}
+
+      - run: make setup/dev
+
+      - save_cache:
+          paths:
+            - ./vendor
+          key: vendor-{{ checksum "composer.json" }}
+
+      - run: make test
+
