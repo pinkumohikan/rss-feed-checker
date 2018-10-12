@@ -1,32 +1,29 @@
 RSS Feed Checker
 ====
 
-概要
-----
-RSSの更新をチェックして、メール送ったりする君です
+RSSの更新をチェックして、更新が有った際に通知を行います
 
-
-## 対応しているRSSフォーマット
+### 対応しているRSSフォーマット
 * [RSS2.0](src/RssFeed/Parser/Rss20.php)
 
-チェックしたいRSSフォーマットが上記にないなら [ParserInterface](src/RssFeed/ParserInterface.php) を実装するParserを書いてPRをお送り下さい
+利用したいRSSフォーマットが上記にないなら [ParserInterface](src/RssFeed/ParserInterface.php) を実装するParserを書いてPRをお送り下さい
 
-## 対応している更新通知先
+### 対応している更新通知先
 * [メール](src/UpdateNotify/Notifier/Mail.php)
 
 通知したい方法が上記にないなら [NotifierInterface](src/UpdateNotify/NotifierInterface.php) を実装するNotifierを書いてPRをお送り下さい
-
-## 想定している使い方
-* ブログに更新があれば #あとで読む タグを付けてはてなブックマークする
 
 
 使い方
 ----
 1. このリポジトリをclone
-    * `git clone git@github.com:pinkumohikan/rss-feed-checker.git`
-1. `config/general.yml` を開き、監視対象と更新通知方法を設定する
+    * `git clone --depth 1 https://github.com/pinkumohikan/rss-feed-checker.git`
+1. 依存パッケージをinstall
+    * `make install`
+1. 監視対象を設定
+    * `vim config/general.yml`
 1. cronとかで定期実行する
-    * ` */10 * * * * php path-to-repository/bin/check-update.php > /dev/null`
+    * ` */10 * * * * php path-to-repository/bin/check-update.php >> check.log 2>&1`
 
 
 動作環境
@@ -34,29 +31,21 @@ RSSの更新をチェックして、メール送ったりする君です
 * php 7.0以上
 
 
-セットアップ
-----
-
-何も考えずに下記のコマンドを叩いて下さい
-不安だったらMakefileを読んで下さい
-
-```
-make install
-```
-
 ライセンス
 ----
 MIT
 
-Contribution
+
+コントリビューション
 ----
 お気軽にどうぞ！
 IssueからでもPRからでも大歓迎です
 
-Contributors
+
+開発者、協力者
 ----
-* [Hokuto Shinoda](https://github.com/pinkumohikan)
+* [@pinkumohikan](https://github.com/pinkumohikan)
     * Twitter: [@pinkumohikan](https://twitter.com/pinkumohikan)
-    * Blog: [https://pinkumohikan.com](https://pinkumohikan.com)
+    * Blog: [https://blog.pinkumohikan.com/](https://blog.pinkumohikan.com/)
 * [Ikezoe Makoto](https://github.com/IkezoeMakoto)
     * Twitter: [@for__3](https://twitter.com/for__3)
